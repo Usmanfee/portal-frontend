@@ -18,41 +18,6 @@
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
 
-// Table to span full available width
-main > section {
-  max-width: 100%;
-  margin: 0 50px;
-}
-
-// Content technical user
-.content-technical-user {
-  display: flex;
-}
-
-.content-technical-user-description {
-  width: 50%;
-}
-
-.content-technical-user-image {
-  width: 50%;
-  img {
-    width: max-content;
-    margin-left: 93px;
-  }
-}
-
-.content-technical-user-title {
-  h3 {
-    margin-bottom: 16px !important;
-    text-align: left !important;
-  }
-
-  p {
-    margin-bottom: 16px !important;
-    text-align: left !important;
-  }
-
-  .section-title::after {
-    border-bottom: none !important;
-  }
+export const capitalize = (str: string) => {
+  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
 }
